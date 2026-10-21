@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Assurance auto malussé ou résilié, VTC, W garage | Rémy Leroi</title>
+<meta name="description" content="Courtier en assurance indépendant (cabinet Ziassur) : auto, VTC, négociants automobiles. Malus, résiliation, permis annulé : dossier étudié. Rappel sous 12 à 24 h.">
+<meta name="theme-color" content="#0F2A43">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Rémy Leroi, conseiller du cabinet Ziassur : assurance auto, VTC, négociants automobiles">
+<meta property="og:description" content="Malusé, résilié ou permis annulé ? Remplissez le formulaire : un conseiller vous rappelle sous 12 à 24 h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<div class="topbar" id="topbar"><strong data-b="nom"></strong><a class="btn" href="#devis" data-call>Appeler <span data-b="tel"></span></a></div>
+
+<header class="hero">
+<div class="roadscene" aria-hidden="true"><svg class="car" viewBox="0 0 220 80"><path fill="#fff" d="M8 54V44Q8 38 16 37L44 33L66 14Q70 11 76 11H138Q144 11 148 15L168 33L200 38Q212 40 212 50V54Z"/><path fill="#0F2A43" opacity=".35" d="M72 18H136L158 33H56Z"/><g class="wheel"><circle cx="58" cy="56" r="14" fill="#0F2A43"/><circle cx="58" cy="56" r="6" fill="#fff"/><path d="M58 44V68M46 56H70" stroke="#fff" stroke-width="2"/></g><g class="wheel"><circle cx="170" cy="56" r="14" fill="#0F2A43"/><circle cx="170" cy="56" r="6" fill="#fff"/><path d="M170 44V68M158 56H182" stroke="#fff" stroke-width="2"/></g></svg><div class="road"></div></div>
+  <div class="wrap">
+    <nav aria-label="Navigation principale">
+      <a class="logo" href="#"><i></i><span data-b="nom"></span></a>
+      <ul><li><a href="#offres">Assurances</a></li><li><a href="#guides">Guides</a></li><li><a href="#faq">Questions</a></li></ul>
+      <a class="tel" href="#devis" data-call data-b="tel"></a>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <h1 id="headline"><span class="h-a">Malussé, résilié ou permis annulé ?</span> <span class="h-b">Trouvons ensemble une assurance auto.</span></h1>
+        <p class="lead">Courtier en assurance indépendant au sein du cabinet Ziassur, nous vous accompagnons dans la recherche d'une compagnie d'assurance adaptée à votre situation : auto, VTC ou négociant automobile.</p>
+        <p class="promise"><b>Complétez le formulaire : un conseiller vous rappelle sous 12&nbsp;à&nbsp;24&nbsp;h.</b> Nous comparons ensemble les solutions pour retenir la plus adaptée à votre situation.</p>
+        <ul class="speed"><li><b>Demande en quelques secondes</b><span>Quelques champs à renseigner, sans pièce justificative à ce stade.</span></li><li><b>Attestation en 20&nbsp;à&nbsp;25&nbsp;minutes</b><span>Une fois le dossier accepté et le contrat signé. Tous les profils, malussés ou non, sont étudiés.</span></li></ul>
+        <div class="cta">
+          <a class="btn" href="#devis">Demander un devis</a>
+          <a class="btn ghost" href="#devis" data-call>Appeler <span data-b="tel"></span></a>
+        </div>
+      </div>
+
+      <div class="phone" id="devis">
+        <div class="island" aria-hidden="true"></div>
+        <div class="screen">
+        <h2>Demande de devis</h2>
+        <p class="sub">Quelques secondes à remplir, rappel sous 12&nbsp;à&nbsp;24&nbsp;h</p>
+        <div role="tablist" aria-label="Type d'assurance">
+          <button role="tab" id="t-auto" aria-selected="true" aria-controls="fields" data-k="auto">Auto</button>
+          <button role="tab" id="t-vtc" aria-selected="false" aria-controls="fields" data-k="vtc">VTC</button>
+          <button role="tab" id="t-neg" aria-selected="false" aria-controls="fields" data-k="neg">Négoce auto</button>
+        </div>
+        <form id="f" novalidate>
+          <div id="fields" role="tabpanel" aria-labelledby="t-auto">
+            <div class="row2">
+              <label class="field"><span>Prénom</span><input id="prenom" autocomplete="given-name" required></label>
+              <label class="field"><span>Nom</span><input id="nom" autocomplete="family-name" required></label>
+            </div>
+            <label class="field"><span>Adresse e-mail</span><input id="mail" type="email" autocomplete="email" required></label>
+            <label class="field"><span>Numéro de téléphone</span><input id="tel" type="tel" autocomplete="tel" required></label>
+            <label class="field"><span>Motif de la demande</span><select id="motif" required><option value="">Choisir…</option><option>Malus</option><option>Résilié par mon assureur</option><option>Résilié pour non-paiement</option><option>Plusieurs refus d'assurance</option><option>Permis annulé ou suspendu</option><option>Autre situation</option></select></label>
+            <label class="check"><input type="checkbox" id="rappel"><span>J'accepte d'être rappelé(e) par <b data-b="nom"></b>, conseiller du cabinet <span data-b="raison"></span>, au numéro indiqué, pour étudier ma demande d'assurance.</span></label>
+          </div>
+          <input id="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <button class="btn" type="submit">Être rappelé(e)</button>
+          <p id="msg" role="status"></p>
+          <p class="fine">Vos données sont traitées par <span data-b="raison"></span> pour répondre à votre demande. Vous pouvez demander leur accès, leur correction ou leur suppression à <span data-b="email"></span>. <a href="#legal">En savoir plus</a>.</p>
+        </form>
+        <div id="thanks" hidden>
+          <h2>Merci</h2>
+          <p><b id="thName"></b>, votre demande a bien été transmise. Un conseiller vous rappelle sous 12&nbsp;à&nbsp;24&nbsp;h au <b id="thTel"></b>.</p>
+          <button class="btn" id="thAgain" type="button">Nouvelle demande</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="trust"><div class="wrap"><span>Courtier en assurance, ORIAS n° <b data-b="orias"></b></span><span>Médiation de l'assurance</span><span>Respect de vos données personnelles</span><span>Rappel sous 12&nbsp;à&nbsp;24&nbsp;h</span><span>Attestation en 20&nbsp;à&nbsp;25&nbsp;min après validation</span></div></div>
+
+<main id="main" tabindex="-1">
+<section id="offres">
+  <div class="wrap">
+    <h2>Auto, VTC et négociant automobile, même avec un dossier difficile</h2>
+    <p class="intro">Chaque situation est étudiée individuellement. Nous vous accompagnons de la demande jusqu'à la signature ; l'acceptation du dossier reste décidée par la compagnie d'assurance.</p>
+    <div class="offers">
+      <article class="offer">
+        <h3>Assurance auto<small>Malus, résiliation, permis annulé ou suspendu</small></h3>
+        <p>Malus, résiliation ou refus d'assurance : nous présentons votre dossier aux compagnies qui étudient ces profils.</p>
+        <ul>
+          <li>Malus et coefficient élevé</li>
+          <li>Résiliation pour non-paiement ou sinistres</li>
+          <li>Plusieurs refus d'assurance</li>
+          <li>Permis annulé ou suspendu</li>
+          <li>Tiers, tiers étendu ou tous risques</li>
+        </ul>
+      </article>
+      <article class="offer">
+        <h3>Assurance VTC<small>Chauffeurs avec malus ou résiliation</small></h3>
+        <p>Le transport de personnes à titre onéreux exige une garantie spécifique. Nous recherchons un contrat adapté à votre activité.</p>
+        <ul>
+          <li>Responsabilité civile passagers transportés</li>
+          <li>Protection du conducteur</li>
+          <li>Profils avec malus ou contrat résilié</li>
+        </ul>
+      </article>
+      <article class="offer">
+        <h3>Négociant automobile<small>Achat-revente, plaque W garage</small></h3>
+        <p>Pour les professionnels de l'achat-revente : l'assurance doit couvrir les véhicules du parc, les essais et la circulation sous plaque W garage. Le certificat W garage ne remplace jamais l'assurance.</p>
+        <ul>
+          <li>Responsabilité civile professionnelle</li>
+          <li>Responsabilité civile automobile (essais, présentation à un acheteur)</li>
+          <li>Vol et incendie des véhicules du parc</li>
+          <li>Multirisque des locaux et du matériel, si besoin</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="methode">
+  <div class="wrap">
+    <h2>Notre accompagnement, étape par étape</h2>
+    <ol class="steps">
+      <li><b>Vous complétez le formulaire</b><span>Quelques secondes suffisent, ou contactez directement un conseiller.</span></li>
+      <li><b>Un conseiller vous rappelle sous 12&nbsp;à&nbsp;24&nbsp;h</b><span>Il analyse votre situation et vos besoins.</span></li>
+      <li><b>Nous comparons les solutions</b><span>Nous étudions avec vous les offres des compagnies d'assurance.</span></li>
+      <li><b>Vous choisissez la solution adaptée</b><span>Nous vous accompagnons jusqu'à la signature. L'attestation d'assurance est remise en 20&nbsp;à&nbsp;25&nbsp;minutes environ une fois le dossier accepté.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="avis" style="padding-top:0">
+  <div class="wrap">
+    <h2>Avis clients</h2>
+    <div id="avisBox"></div>
+  </div>
+</section>
+
+<section id="guides" style="padding-top:0">
+  <div class="wrap">
+    <h2>Guides pour conducteurs malussés ou résiliés</h2>
+    <p class="intro">Des réponses claires aux questions les plus fréquentes.</p>
+    <div class="faq">
+      <details id="guide-malus"><summary>Assurance auto avec un malus</summary>
+        <p>Un malus apparaît après un accident dont vous êtes responsable, en tout ou en partie : votre coefficient augmente de 25 %, dans la limite de 3,50. Après deux ans sans sinistre responsable, il redescend à 1,00. En attendant, certains assureurs refusent le dossier ou majorent fortement la prime.</p>
+        <p>Nous cherchons les offres qui acceptent les profils avec malus et vous expliquons ce qui change le prix : formule, franchise, usage du véhicule.</p>
+      </details>
+      <details id="guide-non-paiement"><summary>Résilié pour non-paiement</summary>
+        <p>Si une cotisation reste impayée, l'assureur doit vous envoyer une mise en demeure. Sans paiement, les garanties sont suspendues, puis le contrat peut être résilié. Les sommes dues restent à régler.</p>
+        <p>Pour vous réassurer, demandez votre relevé d'information à l'ancien assureur : il doit vous le remettre sous 15 jours. Certains assureurs appliquent des conditions particulières à ces dossiers.</p>
+      </details>
+      <details id="guide-refus-bct"><summary>Refus d'assurance et Bureau central de tarification</summary>
+        <p>Après un sinistre, l'assureur peut résilier votre contrat dans les cas prévus par le Code des assurances. Si un assureur refuse de vous couvrir, vous pouvez saisir le Bureau central de tarification (BCT) : il peut imposer à un assureur la garantie de responsabilité civile obligatoire, à un tarif qu'il fixe.</p>
+        <p>Cette garantie ne couvre pas les dommages à votre propre véhicule. Un conseiller peut vous expliquer la démarche.</p>
+      </details>
+      <details id="guide-permis"><summary>Permis annulé ou suspendu</summary>
+        <p>Pendant une suspension ou après une annulation, vous ne pouvez pas conduire. Votre assureur doit être informé de la situation, car elle modifie le risque : il peut adapter ou résilier le contrat dans les cas prévus par le Code des assurances.</p>
+        <p>Quand vous retrouvez le droit de conduire, beaucoup d'assureurs étudient le dossier avec prudence : le motif, l'ancienneté du permis et les sinistres comptent. Nous cherchons les assureurs qui acceptent ces profils. Conduire sans permis valide expose à de lourdes sanctions et à une couverture incertaine.</p>
+      </details>
+      <details id="guide-vtc"><summary>Assurance VTC avec malus ou contrat résilié</summary>
+        <p>Les assureurs sont souvent plus prudents avec les VTC : le véhicule roule beaucoup et transporte des clients. Avec un malus ou une résiliation, le choix se réduit encore.</p>
+        <p>Votre contrat doit couvrir explicitement le transport de personnes à titre onéreux : une assurance auto classique ne suffit pas. Préparez votre relevé d'information, votre permis et les informations sur votre activité pour accélérer l'étude.</p>
+      </details>
+      <details id="guide-negociant"><summary>Assurance négociant automobile et plaque W garage</summary>
+        <p>Le certificat W garage est une immatriculation provisoire réservée aux professionnels de l'automobile : il permet de faire circuler des véhicules en attente de vente, pour des essais ou pour les présenter à un acheteur. Il est valable du 1er janvier au 31 décembre de l'année.</p>
+        <p>Il ne remplace jamais l'assurance : un véhicule qui circule sous W garage doit être couvert au minimum par une responsabilité civile. Beaucoup de professionnels ajoutent le vol et l'incendie du parc, et une multirisque pour les locaux. Nous étudions votre dossier au cas par cas pour trouver le contrat adapté à votre activité.</p>
+      </details>
+    </div>
+    <p class="fine" style="margin-top:26px;max-width:46em">Informations générales, non contractuelles, à jour en octobre 2026. Elles ne remplacent pas le conseil d'un professionnel.</p>
+        <h3 class="docs-title">Documents à préparer</h3>
+    <div class="docs">
+      <div class="doc">
+        <h4>Particuliers<small>Assurance auto</small></h4>
+        <ul>
+          <li>Relevé d'information</li>
+          <li>Carte grise</li>
+          <li>Permis de conduire (recto verso)</li>
+        </ul>
+      </div>
+      <div class="doc">
+        <h4>Professionnels VTC<small>Chauffeurs et sociétés</small></h4>
+        <ul>
+          <li>Kbis</li>
+          <li>Carte professionnelle VTC</li>
+          <li>Permis de conduire (recto verso)</li>
+          <li>Relevé d'information</li>
+          <li>Carte grise</li>
+          <li>Pièce d'identité (recto verso)</li>
+        </ul>
+      </div>
+      <div class="doc">
+        <h4>Négociant automobile<small>Achat-revente, plaque W garage</small></h4>
+        <ul>
+          <li>Kbis (activité d'achat-vente de véhicules)</li>
+          <li>Pièce d'identité (recto verso)</li>
+          <li>Certificat W garage, si vous en avez un</li>
+          <li>Relevé d'information, si vous avez déjà assuré un véhicule</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">Un conseiller pourra vous demander d'autres documents selon votre situation.</p>
+    <p style="margin:18px 0 0"><a class="btn" href="#devis">Demander un rappel</a></p>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>En combien de temps reçois-je mon attestation d'assurance ?</summary><p>Une fois votre dossier accepté par la compagnie et le contrat signé, l'attestation d'assurance vous est remise en 20 à 25 minutes environ. Malussé ou non, tous les profils sont étudiés ; l'acceptation reste décidée par la compagnie.</p></details>
+      <details><summary>Pouvez-vous assurer un conducteur résilié ou avec un malus ?</summary><p>Oui, ces profils sont étudiés au cas par cas. Les tarifs sont souvent plus élevés, mais nous cherchons les conditions les plus justes, sans promesse d'acceptation.</p></details>
+      <details><summary>Quelle assurance faut-il pour travailler en VTC ?</summary><p>Une assurance auto classique ne suffit pas : il faut une garantie qui couvre explicitement le transport de personnes à titre onéreux. Pensez aussi à vérifier les exigences de votre plateforme.</p></details>
+      <details><summary>Puis-je changer d'assureur en cours d'année ?</summary><p>Pour une assurance auto de particulier, oui : après la première année de contrat, la résiliation est possible à tout moment. Pour un contrat professionnel (VTC, négociant automobile), les conditions dépendent du contrat. Nous vous les précisons et nous nous occupons des démarches.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="legal">
+  <div class="wrap">
+    <div class="cols">
+      <div><b data-b="nom"></b><p>Conseiller du cabinet <span data-b="raison"></span>, courtier en assurance</p><p data-b="adresse"></p></div>
+      <div><b>Contact</b><p><a href="#devis" data-call data-b="tel"></a></p><p data-b="email"></p><p data-b="horaires"></p></div>
+          </div>
+    <p class="legal">Ce site présente l'activité de <span data-b="nom"></span> (nom d'usage), conseiller du cabinet <span data-b="raison"></span>, courtier en assurance immatriculé à l'ORIAS sous le n° <span data-b="orias"></span>. Il n'est pas le site d'un assureur.</p>
+    <div class="legalbar"><details><summary>Mentions légales</summary><p>Éditeur : <span data-b="raison"></span>, <span data-b="forme"></span>, <span data-b="adresse"></span>. Cabinet de courtage immatriculé à l'ORIAS sous le n° <span data-b="orias"></span> (www.orias.fr). Conseiller : <span data-b="nom"></span> (nom d'usage), collaborateur du cabinet. Directeur de la publication : MarInsights Consulting. Hébergeur : [À COMPLÉTER]. Autorité de contrôle : ACPR, 4 place de Budapest, 75436 Paris Cedex 09.</p></details><details id="legal-privacy"><summary>Politique de confidentialité</summary><div class="pol">
+<p><b>Mise à jour : 08/10/2026</b></p>
+<p>Ziassur attache une importance majeure à la protection des données personnelles de ses prospects et clients. La présente politique décrit les engagements de Ziassur en matière de traitement de données, en conformité avec le Règlement Général sur la Protection des Données (RGPD) et la loi française Informatique et Libertés.</p>
+<h4>1. Responsable du traitement</h4>
+<p>Ziassur (SAS), 60 rue François 1er, 75008 Paris, immatriculée au RCS sous le numéro 990 524 423 — <a href="mailto:contact@ziassur.fr">contact@ziassur.fr</a>.</p>
+<h4>2. Données collectées</h4>
+<p>Dans le cadre de notre activité de courtage en assurance, nous collectons :</p>
+<ul>
+<li>Données d'identification : civilité, nom, prénom, date de naissance, adresse, code postal</li>
+<li>Données de contact : téléphone, email</li>
+<li>Données de profil : situation familiale, profession, régime social</li>
+<li>Données de santé (uniquement avec votre consentement explicite, pour les produits santé) : antécédents médicaux, traitements en cours, besoins de couverture</li>
+<li>Données techniques : adresse IP, type de navigateur, pages consultées, source d'acquisition et paramètres de campagne lorsque vous acceptez les cookies concernés</li>
+</ul>
+<h4>3. Finalités et bases légales</h4>
+<ul>
+<li>Établissement de devis : exécution du contrat précontractuel à votre demande (art. 6.1.b RGPD)</li>
+<li>Conseil et FIC : obligation légale du courtier (DDA/IDD, art. 6.1.c RGPD)</li>
+<li>Souscription et gestion de contrats : exécution du contrat (art. 6.1.b RGPD)</li>
+<li>Marketing direct : intérêt légitime ou consentement (art. 6.1.a/f RGPD)</li>
+<li>Lutte contre la fraude et la blanchiment (LCB-FT) : obligation légale (art. 6.1.c RGPD)</li>
+</ul>
+<h4>4. Durée de conservation</h4>
+<ul>
+<li>Prospects : 3 ans à compter du dernier contact actif</li>
+<li>Clients : durée du contrat + 5 ans après résiliation (obligations comptables et juridiques)</li>
+<li>Documents LCB-FT : 5 ans après la fin de la relation</li>
+<li>Cookies analytiques et marketing : 13 mois maximum</li>
+</ul>
+<h4>5. Destinataires des données</h4>
+<p>Vos données sont susceptibles d'être communiquées à :</p>
+<ul>
+<li>Les compagnies d'assurance partenaires (APRIL, SwissLife, Alptis et autres) pour établir vos devis et contrats</li>
+<li>Nos prestataires techniques (Supabase EU, Vercel, Resend, Yousign) liés par des accords de sous-traitance (DPA)</li>
+<li>Les autorités compétentes (ACPR, TRACFIN) si requis par la loi</li>
+</ul>
+<p>Aucune donnée n'est vendue ou louée à des tiers commerciaux.</p>
+<h4>6. Transferts hors UE</h4>
+<p>Nos hébergeurs principaux sont en zone UE (Supabase Frankfurt, Vercel Paris). Si certains prestataires (Resend) opèrent depuis les États-Unis, ils sont certifiés Data Privacy Framework (DPF) ou couverts par des clauses contractuelles types (CCT) de la Commission européenne.</p>
+<h4>7. Vos droits</h4>
+<p>Conformément au RGPD, vous disposez des droits suivants :</p>
+<ul>
+<li>Droit d'accès à vos données</li>
+<li>Droit de rectification en cas d'inexactitude</li>
+<li>Droit à l'effacement (sous réserve de nos obligations légales de conservation)</li>
+<li>Droit à la limitation du traitement</li>
+<li>Droit à la portabilité de vos données</li>
+<li>Droit d'opposition au traitement (notamment marketing direct)</li>
+<li>Droit de retirer votre consentement à tout moment</li>
+<li>Droit de définir des directives post-mortem</li>
+</ul>
+<p>Pour exercer ces droits, contactez-nous à <a href="mailto:contact@ziassur.fr">contact@ziassur.fr</a> avec une copie d'une pièce d'identité. Nous vous répondrons sous 1 mois.</p>
+<h4>8. Réclamation CNIL</h4>
+<p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
+<h4>9. Sécurité</h4>
+<p>Toutes les données sont chiffrées en transit (TLS 1.3) et au repos. Les accès aux systèmes sont protégés par authentification forte et journalisés. Nos sous-traitants sont audités annuellement.</p>
+<h4>10. Spécificités de ce site</h4>
+<ul>
+<li>Formulaire : prénom, nom, adresse e-mail, numéro de téléphone, motif de la demande (par exemple malus, résiliation, permis annulé ou suspendu) et consentement à être rappelé(e), utilisés pour vous rappeler et étudier votre demande d'assurance.</li>
+<li>Assistante virtuelle (IA) : les messages que vous lui écrivez sont traités par un service d'intelligence artificielle pour générer ses réponses ; ne saisissez pas de données personnelles. Prestataire : <span class="todo">[À CONFIRMER]</span>.</li>
+<li>Cookies : ce site n'utilise pas encore de cookies de mesure ou de publicité. Un bandeau vous permettra de les accepter ou de les refuser avant leur activation ; vous pourrez modifier votre choix à tout moment via « Gérer mes cookies ».</li>
+<li>Transmission des demandes : les données saisies dans le formulaire sont transmises par e-mail au cabinet via un service d'envoi de formulaires. Prestataire : <span class="todo">[À CONFIRMER]</span>.</li>
+<li>Hébergeur du site : <span class="todo">[À CONFIRMER]</span>.</li>
+</ul>
+</div></details><details><summary>Réclamations et médiation</summary><p>Pour toute réclamation, écrivez à <span data-b="email"></span>. En cas de désaccord persistant, vous pouvez saisir le médiateur : <span data-b="mediateur"></span>.</p></details><a href="#" id="cookieLink" hidden>Gérer mes cookies</a></div>
+  </div>
+</footer>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="avatar" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#0E6F72"/><path d="M10 64c1-13 11-19 22-19s21 6 22 19z" fill="#0F2A43"/><path d="M26 45l6 8 6-8z" fill="#fff"/><rect x="28" y="38" width="8" height="9" rx="3" fill="#D9A47E"/><ellipse cx="32" cy="29" rx="10" ry="12" fill="#E8B896"/><path d="M21 29c-2-12 4-19 12-19 9 0 14 7 11 20-1-6-3-10-7-12-5 3-11 3-16 0z" fill="#3B2A23"/><path d="M21 28c-1 8 0 15 4 18-4-1-7-6-7-12 0-4 1-6 3-6z" fill="#3B2A23"/><path d="M43 28c1 8 0 15-4 18 4-1 7-6 7-12 0-4-1-6-3-6z" fill="#3B2A23"/><circle cx="28" cy="30" r="1.1" fill="#2B1B14"/><circle cx="36" cy="30" r="1.1" fill="#2B1B14"/><path d="M29 35q3 2.5 6 0" stroke="#B5524A" stroke-width="1.4" fill="none" stroke-linecap="round"/></symbol></svg>
+<div id="chat" class="chat" hidden>
+  <button class="chat-fab" id="chatFab" type="button" aria-expanded="false" aria-controls="chatPanel"><svg class="av" aria-hidden="true"><use href="#avatar"/></svg><span>Une question ?</span></button>
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Assistante virtuelle" hidden>
+    <div class="chat-head"><svg class="av" aria-hidden="true"><use href="#avatar"/></svg><div><b>Léa</b><small>Assistante virtuelle (IA)</small></div><button type="button" id="chatClose" aria-label="Fermer">×</button></div>
+    <div class="chat-log" id="chatLog" aria-live="polite"></div>
+    <div class="chat-chips" id="chatChips"></div>
+    <form class="chat-form" id="chatForm"><input id="chatInput" placeholder="Écrivez votre question" maxlength="300" autocomplete="off" aria-label="Votre question"><button class="btn" type="submit">Envoyer</button></form>
+    <p class="chat-note">Assistante IA : réponses générales, parfois imprécises. Ne saisissez pas d'informations personnelles. <a href="#devis" id="chatCall">Être rappelé(e) par un conseiller</a></p>
+  </div>
+</div>
+<div id="cb" class="cb" role="dialog" aria-label="Cookies" hidden><p>Nous utilisons des cookies de mesure et de publicité pour évaluer l'efficacité de nos annonces. Vous pouvez les accepter ou les refuser. <a href="#legal">En savoir plus</a></p><div><button class="btn" id="cbn" type="button">Refuser</button><button class="btn" id="cby" type="button">Accepter</button></div></div>
+<div class="callbar"><a class="btn" href="#devis" data-call>Appeler</a><a class="btn ghost" href="#devis">Être rappelé(e)</a></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
