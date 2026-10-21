@@ -1,5 +1,5 @@
 /* Informations du cabinet : à remplacer ici uniquement (laisser telHref vide tant que le vrai numéro n'est pas connu, format 33612345678) */
-const CFG={nom:'Rémy Leroi',raison:'Ziassur SAS',forme:'SAS au capital de 1 000 €, RCS Paris 990 524 423',adresse:'60 rue François 1er, 75008 Paris',orias:'25008309',email:'contact@ziassur.fr',tel:'07 57 13 03 66',telHref:'33757130366',gtmId:'',avisUrl:'',leadEmail:'',mediateur:"La Médiation de l'Assurance, TSA 50110, 75441 Paris Cedex 09 (www.mediation-assurance.org)",horaires:'Lun-Ven, 9h-19h'};
+const CFG={marque:'Rémy Courtage',nom:'Rémy Leroi',raison:'Ziassur SAS',forme:'SAS au capital de 1 000 €, RCS Paris 990 524 423',adresse:'60 rue François 1er, 75008 Paris',orias:'25008309',email:'contact@ziassur.fr',tel:'07 57 13 03 66',telHref:'33757130366',gtmId:'',avisUrl:'',leadEmail:'',mediateur:"La Médiation de l'Assurance, TSA 50110, 75441 Paris Cedex 09 (www.mediation-assurance.org)",horaires:'Lun-Ven, 9h-19h'};
 /* AVIS CLIENTS : pour ajouter un avis, copiez une ligne ci-dessous, retirez les // et remplacez le texte.
    Ne publiez que des avis réels, authentiques et que le client a autorisés. verifie:true seulement si l'avis est contrôlé.
    {nom:'Prénom N.', note:5, texte:'Texte exact de l\'avis', date:'2026-10-01', verifie:true}, */
