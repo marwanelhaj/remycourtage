@@ -1,5 +1,5 @@
 /* Informations du cabinet : à remplacer ici uniquement (laisser telHref vide tant que le vrai numéro n'est pas connu, format 33612345678) */
-const CFG={marque:'Rémy Courtage',nom:'Rémy Leroi',raison:'Ziassur SAS',forme:'SAS au capital de 1 000 €, RCS Paris 990 524 423',adresse:'60 rue François 1er, 75008 Paris',orias:'25008309',email:'contact@ziassur.fr',tel:'07 57 13 03 66',telHref:'33757130366',gtmId:'',avisUrl:'',leadEmail:'',mediateur:"La Médiation de l'Assurance, TSA 50110, 75441 Paris Cedex 09 (www.mediation-assurance.org)",horaires:'Lun-Ven, 9h-19h'};
+const CFG={marque:'AlloRémy',nom:'Rémy Leroi',raison:'Ziassur SAS',forme:'SAS au capital de 1 000 €, RCS Paris 990 524 423',adresse:'60 rue François 1er, 75008 Paris',orias:'25008309',email:'contact@ziassur.fr',tel:'07 57 13 03 66',telHref:'33757130366',gtmId:'',avisUrl:'',leadEmail:'elasmarrayan11@gmail.com',mediateur:"La Médiation de l'Assurance, TSA 50110, 75441 Paris Cedex 09 (www.mediation-assurance.org)",horaires:'Lun-Ven, 9h-19h'};
 /* AVIS CLIENTS : pour ajouter un avis, copiez une ligne ci-dessous, retirez les // et remplacez le texte.
    Ne publiez que des avis réels, authentiques et que le client a autorisés. verifie:true seulement si l'avis est contrôlé.
    {nom:'Prénom N.', note:5, texte:'Texte exact de l\'avis', date:'2026-10-01', verifie:true}, */
@@ -70,7 +70,7 @@ document.getElementById('f').addEventListener('submit',e=>{
   const viaMail=()=>{
     if(CFG.email.startsWith('[')){msg.className='err';msg.textContent="Test : le formulaire n'est pas encore relié à l'e-mail du cabinet.";return;}
     const body=['Demande de rappel : '+labels[cur],'','Prénom : '+data.prenom,'Nom : '+data.nom,'E-mail : '+data.email,'Téléphone : '+data.telephone,'Motif : '+data.motif,"Accepte d'être rappelé(e) : oui"].join('\n');
-    location.href='mailto:'+CFG.email+'?subject='+encodeURIComponent('Demande de rappel '+labels[cur])+'&body='+encodeURIComponent(body);
+    location.href='mailto:'+(CFG.leadEmail||CFG.email)+'?subject='+encodeURIComponent('Demande de rappel '+labels[cur])+'&body='+encodeURIComponent(body);
     msg.className='';msg.textContent="Votre messagerie s'ouvre : envoyez le message pour finaliser votre demande.";
   };
   if(!CFG.leadEmail){viaMail();return;}
